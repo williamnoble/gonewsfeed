@@ -1,0 +1,22 @@
+# curl -X POST -d '{"title":"A Second Newfeed", "post":"Second Post Content", "Author": "Bill Blogs"}' localhost:8080/newsfeed
+POST localhost:8080/newsfeed
+Content-Type: application/x-www-form-urlencoded
+
+{"title":"A Second Newfeed", "post":"Second Post Content", "Author": "Bill Blogs"}
+
+###
+
+POST localhost:8080/newsfeed
+Content-Type: application/x-www-form-urlencoded
+
+{"title":"A Third Newsfeed", "post":"Third Post Content", "Author": "Bill Bigins"}
+
+###
+GET http://localhost:8080/newsfeeds
+Accept: application/json
+
+###
+GET http://localhost:8080/
+Accept: application/json
+
+###
